@@ -1,11 +1,9 @@
 package com.parcial.clases;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PrintQueue {
     private List<PrintJob> jobs;
-    private int capacity;
     private int size;
 
     public PrintQueue() {
@@ -25,7 +23,7 @@ public class PrintQueue {
             return null;
         }
         size--;
-        return jobs.remove(0);
+        return jobs.removeFirst();
     }
 
     // Método para verificar si la cola está vacía
