@@ -3,13 +3,13 @@ package com.parcial.clases;
 public class PrintJob {
     private String userName;
     private String time;
-    private Prioridad priority;
+    private Prioridad priority = Prioridad.M;
     private String TrabajoImpresion;
 
     public PrintJob(String userName, String time, Prioridad priority, String TrabajoImpresion) {
         this.userName = userName;
         this.time = time;
-        this.priority = Prioridad.M;
+        this.priority = priority;
         this.TrabajoImpresion = TrabajoImpresion;
     }
 
